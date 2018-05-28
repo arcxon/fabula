@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-    </head>
-    <body>
-        <div class="header">
-            <a href="{{ site.baseurl }}/">Fabula</a>
-        </div>
-        <h1>{{ page.title }}</h1>
-        <div class="article">
-            {{ page.content }}
-        </div>
-        <div class="footer">
+---
+layout: default
+---
 
-        </div>
-    </body>
-</html>
+<div class="article">
+    <h1>{{ page.title }}</h1>
+    {{ page.content }}
+</div>
