@@ -1,5 +1,5 @@
 # Name of your blog (this will show up at the top of your page and in the RSS feed)
-name: Fabula 
+name: Fabula
 
 # Short description (goes below the title; it will also be used in the RSS feed)
 description: A site for stories and poems
@@ -17,6 +17,13 @@ category_dir: /
 # Uncomment if you are planning to run the blog in a subdirectory
 # Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
 # Example, you must use http://localhost:4000/path/to/blog
-#baseurl: /path/to/blog 
+#baseurl: /path/to/blog
 baseurl: '/fabula'
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "story"
