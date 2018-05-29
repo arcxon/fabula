@@ -6,10 +6,10 @@
     /* Light Theme */
     * {
         transform-origin: center right;
-        transition: all 0.5s;    
+        transition: all 0.5s;
     }
     svg * { cursor: pointer; }
-    .Sky { fill: #aee3ff; }
+    .Sky { fill: #73cfe8; }
     .Sun-Moon { fill: #fffb94; }
     .Crater * { fill: #e6eaea; }
     .Crater, .Little-Star { opacity: 0; }

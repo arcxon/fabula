@@ -2,13 +2,12 @@
 layout: default
 ---
 
-<h1>Fabula</h1>
-<h3>A bunch of awesome stories and poems</h3>
+<h3 id="byline">A bunch of awesome stories and poems</h3>
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1 class="article-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
         {{ post.excerpt }}

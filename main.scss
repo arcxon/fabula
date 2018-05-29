@@ -1,3 +1,12 @@
+$theme-color: rgb(195, 62, 68);
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -5,20 +14,54 @@ html {
     height: 100%;
     body {
         height: 100%;
-        margin: 0;
-        padding: 10% 20%;
+        margin: auto;
+        padding: 10% 0;
+        width: 50%;
         font-family: "Crimson Text", "Crimson", serif;
         a {
             text-decoration: none;
-            color: rgb(207, 60, 34);
+            color: $theme-color;
             &:visited{
                 color: hsl(332, 71%, 47%);
             }
         }
-        embed {
-            float: right;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            border-radius: 16px;
+        .header{
+            display: flex;
+            justify-content: space-between;
+            a {
+                font-size: 2em;
+                color: $theme-color;
+                &:visited {
+                    color: $theme-color;
+                }
+                font-weight: bold;
+            }
+        }
+        #byline {
+            font-style: italic;
+            font-weight: normal;
+            text-align: center;
+        }
+        .post {
+            padding: 5% 0;
+            .article-title {
+                font-style: italic;
+            }
+        }
+        .article {
+            .article-title {
+                font-style: italic;
+                font-size: 2em;
+                text-align: center;
+            }
+            font-size: 1.3em;
+        }
+        .footer {
+            margin-top: 10%;
+            text-align: center;
+            #heart {
+                color: $theme-color;
+            }
         }
     }
 }
