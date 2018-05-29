@@ -1,15 +1,24 @@
 html {
     margin: 0;
     padding: 0;
-    background-color: rgb(223, 220, 205);
-    color: rgb(33, 29, 14);
     font-size: 1.3em;
+    height: 100%;
     body {
+        height: 100%;
         margin: 0;
         padding: 10% 20%;
         font-family: "Crimson Text", "Crimson", serif;
         a {
             text-decoration: none;
+            color: rgb(207, 60, 34);
+            &:visited{
+                color: hsl(332, 71%, 47%);
+            }
+        }
+        embed {
+            float: right;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 16px;
         }
     }
 }
